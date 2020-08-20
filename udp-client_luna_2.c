@@ -103,11 +103,13 @@ send_packet(void *ptr)
              reply == seq_id ? "GREEN" : "RED", uip_ds6_route_num_routes(), num_used);
   }
 #endif /* SERVER_REPLY */
+ #define ROOT	(PERIOD * CLOCK_SECOND)
+ #define NUMRAMDL (random_rand() % (ROOT))
 
   seq_id++;
   PRINTF("DATA send to %d 'Hello %d'\n",
-         server_ipaddr.u8[sizeof(server_ipaddr.u8) - 1], seq_id);
-  sprintf(buf, "Hello %d from the client", seq_id);
+         server_ipaddr.u8[sizeof(server_ipaddr.u8) - 1], NUMRAMDL);
+  sprintf(buf, "Hello %d from the client", NUMRAMDL);
   uip_udp_packet_sendto(client_conn, buf, strlen(buf),
                         &server_ipaddr, UIP_HTONS(UDP_SERVER_PORT));
 }
