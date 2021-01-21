@@ -1,0 +1,17 @@
+2021-01-21 01:02:44,726 :: INFO :: Start experiment: luna-243844
+2021-01-21 01:02:44,729 :: INFO :: Control node : Starting of control node serial interface
+2021-01-21 01:02:44,732 :: INFO :: Control node : reset
+2021-01-21 01:02:44,735 :: INFO :: Reset Control Node
+2021-01-21 01:02:47,698 :: INFO :: Control node : start power of open node
+2021-01-21 01:02:47,755 :: INFO :: Node OpenOCD: Setup of openocd node
+2021-01-21 01:02:50,797 :: INFO :: Node OpenOCD: flash of openocd node
+2021-01-21 01:02:50,812 :: INFO :: Flash firmware on OpenOCD: /tmp/tmpIrAiEK--07af995c71c4c03e0b354753e4bf4313_unicast-sender-count-30T-191B.iotlab-m3
+2021-01-21 01:02:57,764 :: INFO :: Control node : Start experiment
+2021-01-21 01:02:57,852 :: INFO :: Control Node set time delay: 2594 us
+2021-01-21 01:02:57,880 :: INFO :: Control node : profile configuration
+2021-01-21 01:02:57,886 :: INFO :: Configure profile on Control Node
+2021-01-21 01:02:57,964 :: INFO :: Start experiment succeeded
+2021-01-21 01:51:46,383 :: INFO :: Check 'control' node ftdi
+2021-01-21 01:51:46,531 :: INFO :: 'control' node ftdi found
+2021-01-21 01:51:46,539 :: INFO :: Check 'm3' node ftdi
+2021-01-21 01:51:46,666 :: INFO :: 'm3' node ftdi found
